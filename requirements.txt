@@ -1,0 +1,8 @@
+sqlalchemy
+pydantic_settings
+alembic
+asyncpg
+psycopg2
+fastapi
+PyJWT
+websockets
