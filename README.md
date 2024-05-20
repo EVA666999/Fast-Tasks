@@ -20,7 +20,7 @@
 <li>Клонируйте репозиторий:</li>
 </ol>
 
-<pre><code>git clone git@github.com:EVA666999/Task_FastAPI_project.git;
+<pre><code>git clone git@github.com:EVA666999/Task_FastAPI_project.git
 </code></pre>
 
 <ol start="2">
