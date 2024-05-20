@@ -24,3 +24,13 @@ class Users(Base):
     created_at = Column(DateTime, nullable=False, server_default=func.now())
 
     tasks = relationship("Task", back_populates="owner")
+
+
+class Message(Base):
+    __tablename__ = 'messages'  # Имя таблицы в базе данных
+
+    id = Column(Integer, primary_key=True)
+    message = Column(String)
+
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}

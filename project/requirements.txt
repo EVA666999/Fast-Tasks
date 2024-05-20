@@ -6,3 +6,5 @@ psycopg2
 fastapi
 PyJWT
 websockets
+pytest
+pytest-asyncio

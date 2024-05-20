@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  postgres:
+    image: ihnupfidi/postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: vasea01
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+  
+  taski_backend:
+    image: ihnupfidi/taski_backend:latest
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASS: vasea01
+      DB_NAME: postgres
+    depends_on:
+      - postgres
+    volumes:
+      - ./project/templates:/project/templates
+    ports:
+      - "8000:8000"
+    
