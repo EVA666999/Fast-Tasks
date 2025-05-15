@@ -1,4 +1,4 @@
-<h1>FastAPI Менеджер задач</h1>
+<h1>FastAPI Менеджер задач Fast-Tasks </h1>
 
 <p>Это API менеджера задач, построенный с использованием FastAPI и SQLAlchemy. Также включает поддержку WebSocket, Docker</p>
 
